@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body
+{
+	padding: 1rem;
+}
+
+main
+{
+	display: grid;
+	place-items:center;
+	min-height: 100vh; 
+	text-align: center;
+}
+
+html
+{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	background-image: url('images/bg-intro-mobile.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-color:hsl(0, 100%, 74%);
+
+}
+
+.text
+{
+	color: white;
+}
+
+.trial
+{
+	padding:2rem 4rem;
+	background-color:hsl(248, 32%, 49%);
+	color:white;
+	
+	border-radius: .5rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
+	box-shadow: rgba(0,0,0,.2) 0 .6rem 0;
+
+}
+
+.trial span
+{
+	font-weight: 700;
+}
+
+
+.content
+{
+	display: grid;
+	place-items:center;
+	background-color: white;
+	box-shadow: rgba(0,0,0,.2) 0 .6rem 0;
+	padding:2rem;
+	border-radius: .5rem;
+}
+
+input
+{
+	width: 90%;
+	margin-bottom: 1rem;
+	padding: .8rem 0 .8rem 10%;
+	border:hsl(246, 25%, 77%) .1rem solid;
+	border-radius: .2rem;
+	font-weight: 600;
+	font-family: inherit;
+
+}
+
+
+input:focus
+{
+	outline: hsl(248, 32%, 49%) .15rem solid;
+	caret-color:hsl(248, 32%, 49%);
+	
+}
+
+#claim
+{
+	padding:1rem 0;
+	width: 100%;
+	background-color:hsl(154, 59%, 51%);
+	color:white;
+	font-family: inherit;
+	border-radius: .5rem;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+	box-shadow: hsl(154, 59%, 30%) 0 .3rem 0;	
+}
+
+#claim:hover
+{
+	filter: brightness(1.1);
+	box-shadow: hsl(154, 59%, 40%) 0 .2rem 0;	
+	letter-spacing: .05rem;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.agree
+{
+	font-size: 0.8rem;
+	color:hsl(246, 25%, 77%);
+	font-weight: 600;
+}
+
+.agree a
+{
+	color: hsl(0, 100%, 74%) ;
+	font-weight: 700;	
+	text-decoration-line: none;
+}
+
+
+img
+{
+	width: 2rem;
+	display: block;
+	margin-left: auto;
+	margin-right: 1rem;
+	margin-bottom: -3rem;
+
+	transform: translateY(-4rem);
+	
+}
+
+.errortext
+{
+	margin-bottom: .5rem; 
+	color: hsl(0, 100%, 74%) ;
+	font-size:.8rem;
+	font-weight:500; 
+	margin-top: -1rem;
+}
+
+
+/***********************************
+***********************************/
+
+@media (min-width: 600px)
+{
+
+h1
+{
+	font-size:2.2rem;
+}
+
+html
+{
+		background-image: url('images/bg-intro-desktop.png');
+}
+
+
+main
+{
+	display: flex;
+}
+
+.text
+{
+	width: 35%;
+	text-align: left;
+	margin:0 10%;
+}
+
+.container
+{
+	width: 35%;
+}
+
+}
+
+
+
+
