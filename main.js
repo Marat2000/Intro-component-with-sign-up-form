@@ -39,7 +39,7 @@ for(i=0;i<2;i++)
 }
 
 
-if(/^([a-zA-Z\d\.\-\_]+)\@([a-zA-Z]+)\.([a-zA-Z\.]+)$/.test(input[2].value))
+if(/^([a-zA-Z\d\.\-\_]+)\@([a-zA-Z]+)\.([a-zA-Z\.]+)([\s]{0,3})$/.test(input[2].value))
 {
 		erroricon[2].style.display="none";
 		errortext[2].style.display="none";
