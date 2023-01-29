@@ -19,7 +19,7 @@ btn.onclick=()=>
 for(i=0;i<2;i++)
 {
 
-	if(/^([a-z]+)$/.test(input[i].value))
+	if(/^([a-zA-Z]+)$/.test(input[i].value))
 		{
 		erroricon[i].style.display="none";
 		errortext[i].style.display="none";
@@ -39,7 +39,7 @@ for(i=0;i<2;i++)
 }
 
 
-if(/^([a-z\d\.\-\_]+)\@([a-z]+)\.([a-z\.]+)$/.test(input[2].value))
+if(/^([a-zA-Z\d\.\-\_]+)\@([a-zA-Z]+)\.([a-zA-Z\.]+)$/.test(input[2].value))
 {
 		erroricon[2].style.display="none";
 		errortext[2].style.display="none";
